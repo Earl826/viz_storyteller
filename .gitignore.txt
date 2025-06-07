@@ -1,0 +1,60 @@
+# Project-specific ignores for Viz Storyteller
+
+# Python specific ignores
+# Virtual environment directory
+.venv/
+env/
+venv/
+*.pyc
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/ # If you use Jupyter notebooks
+instance/ # For Flask if you use instance folders
+.flaskenv # Flask environment file
+
+# Node.js / Frontend specific ignores
+node_modules/
+build/
+dist/
+.parcel-cache/ # If you use Parcel
+.next/ # If you use Next.js
+.nuxt/ # If you use Nuxt.js
+.svelte-kit/ # If you use SvelteKit
+
+# IDE specific ignores
+.idea/ # IntelliJ / PyCharm / WebStorm
+.vscode/ # VS Code settings (if you don't want to share them)
+*.iml # IntelliJ IDEA module files
+*.swp # Vim swap files
+*~ # Emacs backup files
+
+# Operating System specific ignores
+.DS_Store # macOS directory service files
+Thumbs.db # Windows thumbnail cache
+.localized # macOS localization files
+
+# Docker specific ignores
+# Docker build context temporary files
+.dockerignore
+*.tmp
+*.log
+
+# Environment variables (sensitive information)
+.env
+.flaskenv
+*.env.local
+*.env.*.local
+
+# Database files
+*.sqlite3
+*.db
+!*.sqlite3-wal # For SQLite WAL files that might be part of data persistence, typically temporary
+!*.sqlite3-shm # For SQLite SHM files
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
